@@ -30,13 +30,13 @@ func main() {
 	}
 	interfaceName := os.Args[1]
 
-	fmt.Fprintln(os.Stderr, "Warning: this is a test program for Windows, mainly used for debugging this Go package. For a real WireGuard for Windows client, the repo you want is <https://git.zx2c4.com/wireguard-windows/>, which includes this code as a module.")
+	fmt.Fprintln(os.Stderr, "Warning: this is a test program for Windows, mainly used for debugging this Go package. For a real AmneziaWG for Windows client, please visit: https://amnezia.org")
 
 	logger := device.NewLogger(
 		device.LogLevelVerbose,
 		fmt.Sprintf("(%s) ", interfaceName),
 	)
-	logger.Verbosef("Starting wireguard-go version %s", Version)
+	logger.Verbosef("Starting amneziawg-go version %s", Version)
 
 	tun, err := tun.CreateTUN(interfaceName, 0)
 	if err == nil {

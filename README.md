@@ -21,7 +21,7 @@ To run amneziawg-go without forking to the background, pass `-f` or `--foregroun
 ```
 $ amneziawg-go -f wg0
 ```
-When an interface is running, you may use [`amnezia-wg-tools `](https://github.com/amnezia-vpn/amneziawg-go-tools) to configure it, as well as the usual `ip(8)` and `ifconfig(8)` commands.
+When an interface is running, you may use [`amneziawg-tools `](https://github.com/amnezia-vpn/amneziawg-tools) to configure it, as well as the usual `ip(8)` and `ifconfig(8)` commands.
 
 To run with more logging you may set the environment variable `LOG_LEVEL=debug`.
 
@@ -34,11 +34,11 @@ This will run on Linux; you should run amnezia-wg instead of using default linux
 ### macOS
 
 This runs on macOS using the utun driver. It does not yet support sticky sockets, and won't support fwmarks because of Darwin limitations. Since the utun driver cannot have arbitrary interface names, you must either use `utun[0-9]+` for an explicit interface name or `utun` to have the kernel select one for you. If you choose `utun` as the interface name, and the environment variable `WG_TUN_NAME_FILE` is defined, then the actual name of the interface chosen by the kernel is written to the file specified by that variable.
-This runs on MacOS, you should use it from [awg-apple](https://github.com/amnezia-vpn/awg-apple)
+This runs on MacOS, you should use it from [amneziawg-apple](https://github.com/amnezia-vpn/amneziawg-apple)
 
 ### Windows
 
-This runs on Windows, you should use it from [awg-windows](https://github.com/amnezia-vpn/awg-windows), which uses this as a module.
+This runs on Windows, you should use it from [amneziawg-windows](https://github.com/amnezia-vpn/amneziawg-windows), which uses this as a module.
 
 
 ## Building
