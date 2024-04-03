@@ -336,7 +336,7 @@ type ErrUDPGSODisabled struct {
 }
 
 func (e ErrUDPGSODisabled) Error() string {
-	return fmt.Sprintf("disabled UDP GSO on %s, NIC(s) may not support checksum offload", e.onLaddr)
+	return fmt.Sprintf("disabled UDP GSO on %s, NIC(s) may not support checksum offload or peer MTU with protocol headers is greater than path MTU", e.onLaddr)
 }
 
 func (e ErrUDPGSODisabled) Unwrap() error {
