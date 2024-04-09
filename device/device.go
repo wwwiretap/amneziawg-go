@@ -415,6 +415,8 @@ func (device *Device) Close() {
 
 	device.rate.limiter.Close()
 
+	device.resetProtocol()
+
 	device.log.Verbosef("Device closed")
 	close(device.closed)
 }
@@ -559,14 +561,17 @@ func (device *Device) isAdvancedSecurityOn() bool {
 	return device.isASecOn.IsSet()
 }
 
+func (device *Device) resetProtocol() {
+	// restore default message type values
+	MessageInitiationType = 1
+	MessageResponseType = 2
+	MessageCookieReplyType = 3
+	MessageTransportType = 4
+}
+
 func (device *Device) handlePostConfig(tempASecCfg *aSecCfgType) (err error) {
 
 	if !tempASecCfg.isSet {
-		// restore default values
-		MessageInitiationType = 1
-		MessageResponseType = 2
-		MessageCookieReplyType = 3
-		MessageTransportType = 4
 		return err
 	}
 
