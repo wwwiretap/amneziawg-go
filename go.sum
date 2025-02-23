@@ -1,3 +1,5 @@
+github.com/amnezia-vpn/amneziawg-go v0.2.12 h1:CxIQETy5kZ0ip/dFBpmnDxAcS/KuIQaJkOxDv5OQhVI=
+github.com/amnezia-vpn/amneziawg-go v0.2.12/go.mod h1:d7WpNfzCRLy7ufGElJBYpD58WRmNjyLyt3IDHPY8AmM=
 github.com/google/btree v1.1.3 h1:CVpQJjYgC4VbzxeGVHfvZrv1ctoYCAI8vbl07Fcxlyg=
 github.com/google/btree v1.1.3/go.mod h1:qOPhT0dTNdNzV6Z/lhRX0YXUafgPLFUh+gZMl761Gm4=
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
