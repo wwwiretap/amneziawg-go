@@ -11,12 +11,11 @@ import (
 	"os/signal"
 
 	"golang.org/x/sys/windows"
+        "github.com/wwwiretap/amneziawg-go/conn"
+        "github.com/wwwiretap/amneziawg-go/device"
+        "github.com/wwwiretap/amneziawg-go/ipc"
+        "github.com/wwwiretap/amneziawg-go/tun"
 
-	"github.com/amnezia-vpn/amneziawg-go/conn"
-	"github.com/amnezia-vpn/amneziawg-go/device"
-	"github.com/amnezia-vpn/amneziawg-go/ipc"
-
-	"github.com/amnezia-vpn/amneziawg-go/tun"
 )
 
 const (
