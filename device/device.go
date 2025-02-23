@@ -11,11 +11,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/amnezia-vpn/amneziawg-go/conn"
-	"github.com/amnezia-vpn/amneziawg-go/ipc"
-	"github.com/amnezia-vpn/amneziawg-go/ratelimiter"
-	"github.com/amnezia-vpn/amneziawg-go/rwcancel"
-	"github.com/amnezia-vpn/amneziawg-go/tun"
+	"github.com/wwwiretap/amneziawg-go/conn"
+	"github.com/wwwiretap/amneziawg-go/ipc"
+	"github.com/wwwiretap/amneziawg-go/ratelimiter"
+	"github.com/wwwiretap/amneziawg-go/rwcancel"
+	"github.com/wwwiretap/amneziawg-go/tun"
 	"github.com/tevino/abool/v2"
 )
 
